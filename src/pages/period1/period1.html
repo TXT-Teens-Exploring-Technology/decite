@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="light"></ion-icon>
+    </button>
+    <ion-title color="light">Period 1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let text of texts" class='box1'>
+
+    <ion-row>
+      <div>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/imgs/profile.png">
+          </ion-avatar>
+          <h2>Marty McFly</h2>
+        </ion-item>
+
+        <ion-card-content>
+          <p class="textmargin">{{ text.text }}</p>
+        </ion-card-content>
+      </div>
+      <div class="btn">
+        <ion-col>
+          <button ion-button icon-start clear small (click)='likePost(text)' class='btn'>
+            <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class='btnset'></ion-icon>
+            <div>{{text.likes}} Agree!</div>
+          </button>
+        </ion-col>
+      </div>
+
+    </ion-row>
+
+  </ion-card>
+  <div class="input">
+    <form>
+
+      <input id="post" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
+
+      <!-- <input type="text" class="txt" placeholder="Got Anything to say?" [(ngModel)]="textText" name = "a"> -->
+
+      <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
+
+    </form>
+  </div>
+</ion-content>
