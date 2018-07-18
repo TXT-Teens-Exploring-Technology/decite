@@ -14,7 +14,7 @@
 }
 
 .toolbar-background {
-    background-color:  #39587E;
+    background-color:  #FFA500;
   }
 
 .toolbar-title.toolbar-title-md, 
@@ -37,10 +37,9 @@
 }
 
 .postbtn{
-    background-color: #39587E;
+    background-color: rgba(196, 196, 196, 0.83);
     border-radius: 10px;
-    border: 2px #7B7B7C solid;
-    color: white;
+    color: black;
     height: 30px;
 }
 
@@ -51,15 +50,12 @@
     height: 30px
 }
 
-#profiletxt{
-    font-size: 20px;
-}
-
 #profileimg{
     background-image:'./assets/imgs/profile.png';
+    border-radius: 20px;
     width: 40px;
     height: 40px;
-    margin-left:10px;
+    margin-left:15px;
 }
 
 .text{
@@ -68,14 +64,22 @@
 }
 
 #addmenu{
+    bottom: 0%;
+    position: fixed;
     width:250px;
     height:20px;
+    border:1px black solid;
     border-radius: 20px;
-    margin-left:25px;
+    margin-left:15px;
     background-color: white;
+    margin-bottom: 20px;
 }
 
 .addbtn{
     bottom: 0%;
     position: fixed;
 }
+
+
+
+

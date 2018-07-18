@@ -37,13 +37,8 @@
   </ion-card>
   <div class="input">
     <form>
-
       <input id="post" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
-
-      <!-- <input type="text" class="txt" placeholder="Got Anything to say?" [(ngModel)]="textText" name = "a"> -->
-
       <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
-
     </form>
   </div>
 </ion-content>

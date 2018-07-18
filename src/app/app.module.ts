@@ -11,7 +11,7 @@ import { PeriodPage } from '../pages/period3/period3';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { PeriodServiceProvider } from '../providers/period-service/period-service';
+// import { PeriodServiceProvider } from '../providers/period-service/period-service';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { PeriodServiceProvider } from '../providers/period-service/period-servic
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PeriodServiceProvider
+    // PeriodServiceProvider
   ]
 })
 export class AppModule {}
