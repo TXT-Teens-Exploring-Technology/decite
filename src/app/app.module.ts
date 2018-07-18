@@ -7,7 +7,7 @@ import { MyApp } from './app.component';
 import { periodOnePage } from '../pages/period1/period1';
 import { periodTwoPage } from '../pages/period2/period2';
 import { PeriodPage } from '../pages/period3/period3';
-// import { NewPage } from '../pages/new/new';
+import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     periodOnePage,
     periodTwoPage,
     PeriodPage,
-    // NewPage,
+    HomePage,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     periodOnePage,
     periodTwoPage,
     PeriodPage,
-    // NewPage,
+    HomePage,
 
   ],
   providers: [

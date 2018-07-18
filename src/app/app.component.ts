@@ -8,6 +8,7 @@ import {OnInit} from '@angular/core';
 import { periodOnePage } from '../pages/period1/period1';
 import { periodTwoPage } from '../pages/period2/period2';
 import { PeriodPage } from '../pages/period3/period3';
+import { HomePage } from '../pages/home/home';
 
 @Component({
   templateUrl: 'app.html'
@@ -18,7 +19,7 @@ import { PeriodPage } from '../pages/period3/period3';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = periodOnePage;
+  rootPage: any = MyApp;
 
   pages: Array<{ title: string, component: any }>;
 
