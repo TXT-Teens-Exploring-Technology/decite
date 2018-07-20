@@ -11,12 +11,14 @@ import { PeriodPage } from '../pages/period/period';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DatabaseProvider } from '../providers/database/database';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 @NgModule({
   declarations: [
     MyApp,
-  PeriodPage,
+    PeriodPage,
+    ProfilePage
   
   ],
   imports: [
@@ -28,6 +30,7 @@ import { DatabaseProvider } from '../providers/database/database';
   entryComponents: [
     MyApp,
     PeriodPage,
+    ProfilePage
     
 
   ],

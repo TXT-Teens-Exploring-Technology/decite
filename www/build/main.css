@@ -25751,10 +25751,23 @@ ion-navbar.toolbar {
   border-radius: 20px;
   margin-left: 15px;
   background-color: white;
+  color: black;
   margin-bottom: 20px;
 }
 
 .addbtn {
   bottom: 0%;
   position: fixed;
+}
+
+.proimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin: auto;
+}
+
+.profiletxt {
+  font-size: 20px;
+  font: italic;
 }

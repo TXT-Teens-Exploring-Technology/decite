@@ -8,6 +8,7 @@ import {OnInit} from '@angular/core';
 
 import { PeriodPage } from '../pages/period/period';
 import { DatabaseProvider } from '../providers/database/database';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 @Component({
@@ -30,10 +31,10 @@ export class MyApp {
     this.pages = this.db.getPages();
 
     //TO ADD MORE PAGES
-    // let otherPages = [
-    //   { title: 'Extra', component: PeriodPage, class_id: 0}
-    // ]
-    // this.pages= this.pages.concat(otherPages);
+    let otherPages = [
+      { title: 'Extra', component: PeriodPage, class_id: 0}
+    ]
+    this.pages= this.pages.concat(otherPages);
   }
 
   initializeApp() {
@@ -50,6 +51,17 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component, {info: this.db.getClass(page.class_id)});
   }
+  profilePage(){
+    this.nav.push(ProfilePage);
+  }
+//ADD BUTTON MENU
+  addMenu(){
+    let otherPages = [
+      { title: 'Extra', component: PeriodPage, class_id: 0}
+    ]
+    this.pages= this.pages.concat(otherPages);
+  }
+
 }
 
 
@@ -65,7 +77,7 @@ export class appComponent implements OnInit {
     //this.itemCount = this.texts.length;
   }
 
-
+  
 }
 
 

@@ -49,6 +49,45 @@ export class DatabaseProvider {
           text: 'Nice Class Bro!'
         }
       ]
+    },
+    {
+      class_id : 3,
+      className: 'Period 4',
+      teacherName: 'Mr. Bean',
+      teacherPicture: 'teacher.png',
+      period: 'Period 2',
+      comments:[
+        {
+          likes: 0,
+          text: 'Nice Class Bro!'
+        }
+      ]
+    },
+    {
+      class_id : 4,
+      className: 'Period 5',
+      teacherName: 'Mr. P',
+      teacherPicture: 'teacher.png',
+      period: 'Period 2',
+      comments:[
+        {
+          likes: 0,
+          text: 'Nice Class Bro!'
+        }
+      ]
+    },
+    {
+      class_id : 5,
+      className: 'Period 6',
+      teacherName: 'Mr. Lee',
+      teacherPicture: 'teacher.png',
+      period: 'Period 2',
+      comments:[
+        {
+          likes: 0,
+          text: 'Nice Class Bro!'
+        }
+      ]
     }
   ]
 

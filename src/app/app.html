@@ -2,7 +2,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-row>
-          <button ion-button (click)="profilePage()" id="profileimg"></button>
+          <button menuClose ion-button (click)="profilePage()" id="profileimg"></button>
           <ion-title>Marty McFLy</ion-title>
         </ion-row>
       </ion-toolbar>
@@ -14,7 +14,7 @@
             {{p.title}}
           </button>
 
-          <button id='addmenu'>Add New Channel</button>
+          <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>
   
         </ion-list>
         <!-- <button ion-button *ngFor="let p of pages" (click)="addPeriod()"> Add new Period
