@@ -33,20 +33,27 @@ export class PeriodPage {
   }
 
   likePost(likedPost) {
-    likedPost.likes += 1
-    console.log(likedPost.likes)
-    console.log("Hello World")
-    // sort likedPosts
-    this.texts = this.texts.sort((a, b) => {
-      if (a.likes > b.likes) {
-        return -1;
+
+      if(likedPost.likes==0){
+        likedPost.likes += 1
       }
-      if (a.likes < b.likes) {
-        return 1;
-      }
-      return 0;
-    })
-  console.log(this.texts);
+    
+      console.log(likedPost.likes)
+      console.log("Hello World")
+      // sort likedPosts
+      this.texts = this.texts.sort((a, b) => {
+        if (a.likes > b.likes) {
+          return -1;
+        }
+        if (a.likes < b.likes) {
+          return 1;
+        }
+        return 0;
+      })
+    console.log(this.texts);
+    
+    
+    
   }
 
   // const da = new Date(){}

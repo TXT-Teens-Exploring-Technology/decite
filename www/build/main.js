@@ -407,7 +407,9 @@ var PeriodPage = /** @class */ (function () {
         this.itemCount = this.texts.length;
     };
     PeriodPage.prototype.likePost = function (likedPost) {
-        likedPost.likes += 1;
+        if (likedPost.likes == 0) {
+            likedPost.likes += 1;
+        }
         console.log(likedPost.likes);
         console.log("Hello World");
         // sort likedPosts
@@ -426,9 +428,10 @@ var PeriodPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-list',template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/'<ion-header>\n    <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu" color="light"></ion-icon>\n      </button>\n      <ion-title color="light">{{name}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content padding>\n    <ion-card *ngFor="let text of texts" class=\'box1\'>\n  \n      <div>\n        <ion-row>\n          <div>\n            <ion-item>\n              <ion-avatar item-start>\n                <img src="assets/imgs/profile.png">\n              </ion-avatar>\n              <h2>Marty McFly</h2>\n            </ion-item>\n          </div>\n          <div>\n            <ion-col>\n              <button ion-button icon-start clear small (click)=\'likePost(text)\' class=\'btn\'>\n                <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class=\'btnset\'></ion-icon>\n                <div>{{text.likes}} Agree!</div>\n              </button>\n            </ion-col>\n          </div>\n        </ion-row>\n      </div>\n  \n      <ion-card-content>\n        <p class="textmargin">{{ text.text }}</p>\n      </ion-card-content>\n  \n    </ion-card>\n    <div class="input">\n      <form>\n        <input id="post" type="text" placeholder="Let\'s hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">\n        <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>\n      </form>\n    </div>\n  </ion-content>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
     ], PeriodPage);
     return PeriodPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=period.js.map
