@@ -14,7 +14,7 @@ export class DatabaseProvider {
     {
       class_id : 0,
       className: 'Period 1',
-      teacherName: 'Ms. Example',
+      teacherName: 'Ms. Le',
       teacherPicture: 'teacher.png',
       period: 'Period 1',
       comments:[
@@ -27,7 +27,7 @@ export class DatabaseProvider {
     {
       class_id : 1,
       className: 'Period 2',
-      teacherName: 'Mr. Example',
+      teacherName: 'Mr. Lee',
       teacherPicture: 'teacher.png',
       period: 'Period 2',
       comments:[
@@ -40,7 +40,7 @@ export class DatabaseProvider {
     {
       class_id : 2,
       className: 'Period 3',
-      teacherName: 'Mr. Le',
+      teacherName: 'Mr. T',
       teacherPicture: 'teacher.png',
       period: 'Period 2',
       comments:[
@@ -50,45 +50,6 @@ export class DatabaseProvider {
         }
       ]
     },
-    {
-      class_id : 3,
-      className: 'Period 4',
-      teacherName: 'Mr. Bean',
-      teacherPicture: 'teacher.png',
-      period: 'Period 2',
-      comments:[
-        {
-          likes: 0,
-          text: 'Nice Class Bro!'
-        }
-      ]
-    },
-    {
-      class_id : 4,
-      className: 'Period 5',
-      teacherName: 'Mr. P',
-      teacherPicture: 'teacher.png',
-      period: 'Period 2',
-      comments:[
-        {
-          likes: 0,
-          text: 'Nice Class Bro!'
-        }
-      ]
-    },
-    {
-      class_id : 5,
-      className: 'Period 6',
-      teacherName: 'Mr. Lee',
-      teacherPicture: 'teacher.png',
-      period: 'Period 2',
-      comments:[
-        {
-          likes: 0,
-          text: 'Nice Class Bro!'
-        }
-      ]
-    }
   ]
 
   constructor() {

@@ -12,6 +12,7 @@ import { ProfilePage } from '../pages/profile/profile';
 
 
 @Component({
+  
   templateUrl: 'app.html'
 
 
@@ -54,7 +55,6 @@ export class MyApp {
   profilePage(){
     this.nav.push(ProfilePage);
   }
-//ADD BUTTON MENU
   addMenu(){
     let otherPages = [
       { title: 'Extra', component: PeriodPage, class_id: 0}

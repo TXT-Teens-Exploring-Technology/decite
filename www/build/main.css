@@ -25681,6 +25681,7 @@ ion-navbar.toolbar {
 .input {
   bottom: 0%;
   position: fixed;
+  margin-bottom: 10px;
 }
 
 .scroll {
@@ -25770,4 +25771,8 @@ ion-navbar.toolbar {
 .profiletxt {
   font-size: 20px;
   font: italic;
+}
+
+#sidebar {
+  background-color: #FFA500;
 }
