@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { PeriodPage } from '../../pages/period/period';
+import { ProfilePage } from '../pages/profile/profile';
+
 
 /*
   Generated class for the DatabaseProvider provider.
@@ -52,8 +54,25 @@ export class DatabaseProvider {
     },
   ]
 
+  profile =[
+    {
+      profileId: 0,
+      profileName: 'Joathan D.',
+      schoolName: 'Cathedral Highschool',
+      gradeNumber: '11th',
+      contactInfo: '323-394-6216',
+    }
+  ]
+
   constructor() {
     console.log('Hello DatabaseProvider Provider');
+  }
+  getProfile(profileId_id){
+    for(let i=0; i< this.profile.length; i++){
+      if(this.profile[i].profileId == profileId_id){
+        return this.profile[i];
+      }
+    }
   }
   
 getClass(class_id){

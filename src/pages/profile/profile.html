@@ -26,5 +26,11 @@
     <input class="profiletxt" type='text' placeholder="Grade">
     <p>Contact Info:</p>
     <input class="profiletxt" type='text' placeholder="Contact">
+
+    <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+
+      
   </ion-list>
 </ion-content>

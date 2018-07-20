@@ -34,7 +34,7 @@ var ProfilePage = /** @class */ (function () {
     };
     ProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-profile',template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/pages/profile/profile.html"*/'<!--\n  Generated template for the ProfilePage page.\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>profile</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-avatar item-start>\n      <img  class=\'proimg\' src="assets/imgs/profile.png">\n    </ion-avatar>\n\n    <ion-list>\n    <p>Name:</p>\n    <input class="profiletxt" type=\'text\' placeholder="Your Name">\n    <p>School:</p>\n    <input class="profiletxt" type=\'text\' placeholder="School">\n    <p>Grade:</p>\n    <input class="profiletxt" type=\'text\' placeholder="Grade">\n    <p>Contact Info:</p>\n    <input class="profiletxt" type=\'text\' placeholder="Contact">\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/pages/profile/profile.html"*/,
+            selector: 'page-profile',template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/pages/profile/profile.html"*/'<!--\n  Generated template for the ProfilePage page.\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>profile</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-avatar item-start>\n      <img  class=\'proimg\' src="assets/imgs/profile.png">\n    </ion-avatar>\n\n    <ion-list>\n    <p>Name:</p>\n    <input class="profiletxt" type=\'text\' placeholder="Your Name">\n    <p>School:</p>\n    <input class="profiletxt" type=\'text\' placeholder="School">\n    <p>Grade:</p>\n    <input class="profiletxt" type=\'text\' placeholder="Grade">\n    <p>Contact Info:</p>\n    <input class="profiletxt" type=\'text\' placeholder="Contact">\n\n    <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n\n      \n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/pages/profile/profile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ProfilePage);
@@ -340,15 +340,14 @@ var MyApp = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/app/app.html"*/'<ion-menu [content]="content">\n    <ion-header>\n      <ion-toolbar id="sidebar">\n        <ion-row>\n          <button menuClose ion-button id="profileimg" (click)="profilePage()"></button>\n          <ion-title>Johnathan</ion-title>\n        </ion-row>\n      </ion-toolbar>\n    </ion-header>\n  \n    <ion-content padding>\n        <ion-list> \n          <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n            {{p.title}}\n          </button>\n\n          <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>\n  \n        </ion-list>\n    </ion-content>\n  \n  </ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__providers_database_database__["a" /* DatabaseProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_database_database__["a" /* DatabaseProvider */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_5__providers_database_database__["a" /* DatabaseProvider */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d, _e;
 }());
 
 var appComponent = /** @class */ (function () {
@@ -407,9 +406,7 @@ var PeriodPage = /** @class */ (function () {
         this.itemCount = this.texts.length;
     };
     PeriodPage.prototype.likePost = function (likedPost) {
-        if (likedPost.likes == 0) {
-            likedPost.likes += 1;
-        }
+        likedPost.likes += 1;
         console.log(likedPost.likes);
         console.log("Hello World");
         // sort likedPosts
@@ -428,10 +425,9 @@ var PeriodPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-list',template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/'<ion-header>\n    <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu" color="light"></ion-icon>\n      </button>\n      <ion-title color="light">{{name}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content padding>\n    <ion-card *ngFor="let text of texts" class=\'box1\'>\n  \n      <div>\n        <ion-row>\n          <div>\n            <ion-item>\n              <ion-avatar item-start>\n                <img src="assets/imgs/profile.png">\n              </ion-avatar>\n              <h2>Marty McFly</h2>\n            </ion-item>\n          </div>\n          <div>\n            <ion-col>\n              <button ion-button icon-start clear small (click)=\'likePost(text)\' class=\'btn\'>\n                <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class=\'btnset\'></ion-icon>\n                <div>{{text.likes}} Agree!</div>\n              </button>\n            </ion-col>\n          </div>\n        </ion-row>\n      </div>\n  \n      <ion-card-content>\n        <p class="textmargin">{{ text.text }}</p>\n      </ion-card-content>\n  \n    </ion-card>\n    <div class="input">\n      <form>\n        <input id="post" type="text" placeholder="Let\'s hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">\n        <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>\n      </form>\n    </div>\n  </ion-content>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], PeriodPage);
     return PeriodPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=period.js.map
