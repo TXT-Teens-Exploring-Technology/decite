@@ -25702,7 +25702,7 @@ ion-navbar.toolbar {
 .toolbar-title.toolbar-title-wp {
   color: #f4f4f4;
   font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .toolbar {
@@ -25714,6 +25714,8 @@ ion-navbar.toolbar {
   right: 0%;
   color: #8F2323;
   font-size: 20px;
+  padding-right: 30px;
+  padding-left: 0px;
 }
 
 .postbtn {

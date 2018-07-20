@@ -21,7 +21,8 @@
 .toolbar-title.toolbar-title-wp { 
     color: map-get($colors, light); 
     font-family:'Helvetica Neue', 'Open Sans', sans-serif;
-    font-size: 25px
+    font-size: 20px
+    
 }
 
 .toolbar{
@@ -33,6 +34,8 @@
     right:0%;
     color:#8F2323;
     font-size: 20px;
+    padding-right:30px;
+    padding-left:0px;
 }
 
 .postbtn{
