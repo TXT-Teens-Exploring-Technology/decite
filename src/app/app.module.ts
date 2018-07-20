@@ -4,22 +4,20 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { FormsModule } from '@angular/forms';
 import { MyApp } from './app.component';
-import { periodOnePage } from '../pages/period1/period1';
-import { periodTwoPage } from '../pages/period2/period2';
-import { PeriodPage } from '../pages/period3/period3';
-import { HomePage } from '../pages/home/home';
+
+import { PeriodPage } from '../pages/period/period';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-// import { PeriodServiceProvider } from '../providers/period-service/period-service';
+import { DatabaseProvider } from '../providers/database/database';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    periodOnePage,
-    periodTwoPage,
-    PeriodPage,
-    HomePage,
+  PeriodPage,
+  
   ],
   imports: [
     BrowserModule,
@@ -29,17 +27,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    periodOnePage,
-    periodTwoPage,
     PeriodPage,
-    HomePage,
+    
 
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    // PeriodServiceProvider
+    DatabaseProvider,
+
   ]
 })
 export class AppModule {}

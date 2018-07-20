@@ -5,10 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {OnInit} from '@angular/core';
 
-import { periodOnePage } from '../pages/period1/period1';
-import { periodTwoPage } from '../pages/period2/period2';
-import { PeriodPage } from '../pages/period3/period3';
-import { HomePage } from '../pages/home/home';
+
+import { PeriodPage } from '../pages/period/period';
+import { DatabaseProvider } from '../providers/database/database';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -19,20 +19,21 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = MyApp;
+  rootPage: any = PeriodPage;
 
   pages: Array<{ title: string, component: any }>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public db: DatabaseProvider) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Period 1', component: periodOnePage },
-      { title: 'Period 2', component: periodTwoPage },
-      { title: 'Period 3', component: PeriodPage }
-    ];
+    this.pages = this.db.getPages();
 
+    //TO ADD MORE PAGES
+    // let otherPages = [
+    //   { title: 'Extra', component: PeriodPage, class_id: 0}
+    // ]
+    // this.pages= this.pages.concat(otherPages);
   }
 
   initializeApp() {
@@ -47,7 +48,7 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page.component, {info: this.db.getClass(page.class_id)});
   }
 }
 
