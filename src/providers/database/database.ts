@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { PeriodPage } from '../../pages/period/period';
 import { ProfilePage } from '../pages/profile/profile';
+import { Storage } from '@ionic/storage';import { Profile } from '../../model/profile.model';
+
 
 
 /*
@@ -12,7 +14,7 @@ import { ProfilePage } from '../pages/profile/profile';
 @Injectable()
 export class DatabaseProvider {
 
-  classes = [
+classes = [
     {
       class_id : 0,
       className: 'Period 1',
@@ -52,29 +54,16 @@ export class DatabaseProvider {
         }
       ]
     },
-  ]
+  ] 
 
-  profile =[
-    {
-      profileId: 0,
-      profileName: 'Joathan D.',
-      schoolName: 'Cathedral Highschool',
-      gradeNumber: '11th',
-      contactInfo: '323-394-6216',
-    }
-  ]
 
   constructor() {
     console.log('Hello DatabaseProvider Provider');
   }
-  getProfile(profileId_id){
-    for(let i=0; i< this.profile.length; i++){
-      if(this.profile[i].profileId == profileId_id){
-        return this.profile[i];
-      }
-    }
-  }
+
   
+  
+
 getClass(class_id){
   for(let i=0; i< this.classes.length; i++){
     if(this.classes[i].class_id == class_id){
@@ -93,6 +82,6 @@ getPages(){
       })
     }
     return output;
-}
+} 
 
 }

@@ -10,4 +10,16 @@ import { ProfilePage } from './profile';
     IonicPageModule.forChild(ProfilePage),
   ],
 })
-export class ProfilePageModule {}
+export class ProfilePageModule {
+
+  profile =[
+    {
+      profileId: 0,
+      profileName: 'Joathan D.',
+      schoolName: 'Cathedral Highschool',
+      gradeNumber: '11th',
+      contactInfo: '323-394-6216',
+    }
+  ]
+  
+}
