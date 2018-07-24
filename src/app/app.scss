@@ -5,6 +5,7 @@
 }
 .scroll { 
     white-space: nowrap; 
+    color: #660000;
 }
 
 .box1{
@@ -99,7 +100,6 @@
 
 .profiletxt{
     font-size:20px;
-    font: italic;
 }
 
 
@@ -120,10 +120,10 @@ p{
 }
 
 
-ion-avatar img{
-    display: inline-block;
-    vertical-align: middle;
-}
+// ion-avatar img{
+//     display: inline-block;
+//     vertical-align: middle;
+// }
 
 .profileicon{
     width: 30px;
@@ -137,9 +137,9 @@ ion-avatar img{
 
 }
 
-.sideinfo{
-   padding-left:42px;
-}
+// .sideinfo{
+//    padding-left:60px;
+// }
 
 .info{
     background-color: white;
@@ -172,7 +172,9 @@ ion-avatar img{
 
 .menubtn{
     border-radius: 10px;
-    background-image:"./assets/imgs/profile2copy.png";
+    background-image:"./assets/imgs/profile2.png";
+    width:47px;
+    height:47px;
 }
 
 .profileFont{
@@ -189,4 +191,34 @@ ion-avatar img{
     position:fixed;
     margin-top:10px;
     margin-left:20%;
+}
+
+.addChannel{
+    border-bottom: 1px solid grey;
+    bottom:0%;
+    position: fixed;
+    margin-bottom: 50px;
+}
+
+#teacherimg{
+    height: 50px;
+    width:50px;
+    margin-top:10px;
+}
+
+.container {
+    width: 10px;
+    height:20px;
+    padding-right:0%;
+}
+#first {
+    width: 50px;
+    float: left;
+    height: 60px;
+}
+#second {
+    width: 20px;
+    margin-left: 20px;
+    height: 20px;
+    float: left;    
 }

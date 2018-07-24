@@ -2,18 +2,11 @@
   <ion-header>
     <ion-toolbar color="primary" id="sidebar">
       <ion-row>
-        <button menuClose ion-button class="menubtn" id="close-image" (click)="profilePage()">
-          <img src="./assets/imgs/profile2copy.png">
+        <button menuClose ion-button id="close-image" (click)="profilePage()">
+          <img class="menubtn" src="./assets/imgs/profile2.png">
         </button>
         <ion-title> Ricardo G.</ion-title>
-        <ion-list>
-          <div>
-            <p class='align'>VerbumDei</p>
-          </div>
-          <!-- <div>
-            <p class='align'>11th</p>
-          </div> -->
-        </ion-list>
+
       </ion-row>
     </ion-toolbar>
 
@@ -22,16 +15,25 @@
   <ion-content style="background-color: #FFA500; width:100%; height : 100%" padding>
 
     <ion-list>
-
       <button class="lists" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" floating>
-        <ion-avatar>
-          <img [src]="p.image"> {{p.title}}
-        </ion-avatar>
-        <p style="color: #222; font:bold" class=sideinfo>{{p.className}}</p>
-        <p style="color: #222;" class=sideinfo>{{p.room}}</p>
+        <div class="containter">
+          <div id="first">
+            <ion-avatar>
+              <img id="teacherimg" [src]="p.image">
+            </ion-avatar>
+          </div>
+          <div id="second">
+            <p style="color: #222;font-weight:bold; font-size:15px;" class=sideinfo>{{p.title}}</p>
+            <p style="color: #222;" class=sideinfo>{{p.className}}</p>
+            <p style="color: #222; font-weight:300;" class=sideinfo>{{p.room}}</p>
+          </div>
+        </div>
+
 
       </button>
-      <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>
+      <div class="addChannel">
+        <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>
+      </div>
 
     </ion-list>
   </ion-content>

@@ -19,6 +19,24 @@ export class PeriodPage {
       this.texts = this.info.comments;
       this.name = this.info.teacherName;
     }
+    else{
+      this.info = {
+        class_id: 0,
+        className: 'Algebra',
+        teacherPicture: 'assets/imgs/teacher.png',
+        teacherName: 'Mr. Domingez',
+        roomNumber: "Room 745",
+        period: 'Period 1',
+        comments: [
+          {
+            likes: 0,
+            text: 'The atmosphere of Mr. Domingez’s class is off. It feels like im trapped.',
+          }
+        ]
+      };
+      this.texts = this.info.comments;
+      this.name = this.info.teacherName;
+    }
   }
 
   addPost() {

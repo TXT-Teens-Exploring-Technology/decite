@@ -8,6 +8,115 @@
 </ion-header>
 
 <ion-content padding>
+  <!-- other users -->
+  <ion-card class='box1'>
+
+    <div>
+      <ion-row>
+        <div>
+          <ion-item>
+            <ion-avatar item-start>
+              <img class="profileicon" src="assets/imgs/profile2.png">
+            </ion-avatar>
+            <h2>Cathy B.</h2>
+          </ion-item>
+        </div>
+        <div>
+          <ion-col>
+            <button ion-button icon-start clear small class='btn'>
+              <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class='btnset'></ion-icon>
+              <div>
+                16 AGREE!
+              </div>
+            </button>
+          </ion-col>
+        </div>
+      </ion-row>
+    </div>
+
+    <ion-card-content>
+      <p class="textmargin">Giving homework right off the textbook isn’t challenging enough. </p>
+    </ion-card-content>
+  </ion-card>
+
+  <form>
+    <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
+    <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
+  </form>
+
+  <!-- other users -->
+  <ion-card class='box1'>
+
+    <div>
+      <ion-row>
+        <div>
+          <ion-item>
+            <ion-avatar item-start>
+              <img class="profileicon" src="assets/imgs/profile2.png">
+            </ion-avatar>
+            <h2>Fernando M.</h2>
+          </ion-item>
+        </div>
+        <div>
+          <ion-col>
+            <button ion-button icon-start clear small class='btn'>
+              <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class='btnset'></ion-icon>
+              <div>
+                10 AGREE!
+              </div>
+            </button>
+          </ion-col>
+        </div>
+      </ion-row>
+    </div>
+
+    <ion-card-content>
+      <p class="textmargin">It just doesn’t seem appropriate to have the same copies of homework </p>
+    </ion-card-content>
+  </ion-card>
+
+  <form>
+    <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
+    <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
+  </form>
+
+ <!-- other users -->
+ <ion-card class='box1'>
+
+    <div>
+      <ion-row>
+        <div>
+          <ion-item>
+            <ion-avatar item-start>
+              <img class="profileicon" src="assets/imgs/profile2.png">
+            </ion-avatar>
+            <h2>Jesus C.</h2>
+          </ion-item>
+        </div>
+        <div>
+          <ion-col>
+            <button ion-button icon-start clear small class='btn'>
+              <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class='btnset'></ion-icon>
+              <div>
+                5 AGREE!
+              </div>
+            </button>
+          </ion-col>
+        </div>
+      </ion-row>
+    </div>
+
+    <ion-card-content>
+      <p class="textmargin">I like how your lesson plan is scheduled, I hope you keep it.</p>
+    </ion-card-content>
+  </ion-card>
+
+      <form>
+        <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
+        <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
+      </form>
+
+<!-- working features -->
   <ion-card *ngFor="let text of texts" class='box1'>
 
     <div>
@@ -17,7 +126,7 @@
             <ion-avatar item-start>
               <img class="profileicon" src="assets/imgs/profile2.png">
             </ion-avatar>
-            <h2>Ricardo</h2>
+            <h2>Ricardo G.</h2>
           </ion-item>
         </div>
         <div>
@@ -38,9 +147,9 @@
     </ion-card-content>
   </ion-card>
 
-      <form>
-        <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
-        <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
-      </form>
+  <form>
+    <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
+    <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
+  </form>
 
 </ion-content>
