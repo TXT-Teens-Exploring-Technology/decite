@@ -11,6 +11,8 @@ import { DatabaseProvider } from '../providers/database/database';
 import { ProfilePage } from '../pages/profile/profile';
 
 
+
+
 @Component({
   
   templateUrl: 'app.html'
@@ -30,12 +32,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = this.db.getPages();
-
-    //TO ADD MORE PAGES
-    let otherPages = [
-      { title: 'Extra', component: PeriodPage, class_id: 0}
-    ]
-    this.pages= this.pages.concat(otherPages);
+    console.log(this.pages);
   }
 
   initializeApp() {
@@ -57,7 +54,7 @@ export class MyApp {
   }
   addMenu(){
     let otherPages = [
-      { title: 'Extra', component: PeriodPage, class_id: 0}
+      { title: 'Ms. Anderson', component: PeriodPage, class_id: 0}
     ]
     this.pages= this.pages.concat(otherPages);
   }

@@ -6,7 +6,7 @@
 <ion-header>
 
     <ion-navbar>
-      <ion-title>profile</ion-title>
+      <ion-title>Johnathan</ion-title>
     </ion-navbar>
   
   </ion-header>
@@ -18,18 +18,27 @@
       </ion-avatar>
   
       <ion-list>
-      <p>Name:</p>
-      <input class="profiletxt" type='text' placeholder="Name">
-      <p>School:</p>
-      <input class="profiletxt" type='text' placeholder="School">
-      <p>Grade:</p>
-      <input class="profiletxt" type='text' placeholder="Grade">
-      <p>Contact Info:</p>
-      <input class="profiletxt" type='text' placeholder="Contact">
+      <ion-item>
+        <ion-label color="dark" stacked>Name</ion-label>
+        <ion-input type="text" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="dark" stacked>School</ion-label>
+          <ion-input type="text" placeholder=""></ion-input>
+      </ion-item>
+        <ion-item>
+        <ion-label color="dark" stacked>Grade</ion-label>
+        <ion-input type="text" placeholder=""></ion-input>
+      </ion-item>
       
-      <button (click)="getProfile()"> me</button>
-        
+      
+      <ion-item>
+          <ion-label floating>Text</ion-label>
+          <ion-input type="text" [(ngModel)]="name"></ion-input>
+        </ion-item>
+      
 
-  
+      <button (click)="getProfile()">Save</button>
+
     </ion-list>
   </ion-content>

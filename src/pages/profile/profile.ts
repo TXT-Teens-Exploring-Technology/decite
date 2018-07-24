@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
+// import { profiles } from '../../providers/database/database';
 
 
 /**
@@ -15,14 +17,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
-
-  getProfile(){
-    this.navCtrl.pop();
-    console.log("A");
-    return 0;
+  todo = {}
+  logForm() {
+    console.log(this.todo)
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+
+
+  getProfile(){
+    var input = "afa"
+
+    console.log(input);
+  }
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
   }
 
   ionViewDidLoad() {
