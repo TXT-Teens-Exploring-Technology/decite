@@ -60,7 +60,7 @@ var PeriodPage = /** @class */ (function () {
     };
     PeriodPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/'<ion-header>\n    <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu" color="light"></ion-icon>\n      </button>\n      <ion-title color="light">{{name}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content padding>\n    <ion-card *ngFor="let text of texts" class=\'box1\'>\n  \n      <div>\n        <ion-row>\n          <div>\n            <ion-item>\n              <ion-avatar item-start>\n                <img class="profileicon" src="assets/imgs/profile.png">\n              </ion-avatar>\n              <h2>Johnathan</h2>\n            </ion-item>\n          </div>\n          <div>\n            <ion-col>\n              <button ion-button icon-start clear small (click)=\'likePost(text)\' class=\'btn\'>\n                <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class=\'btnset\'></ion-icon>\n                <div>{{text.likes}} AGREE!</div>\n              </button>\n            </ion-col>\n          </div>\n        </ion-row>\n      </div>\n  \n      <ion-card-content>\n        <p class="textmargin">{{ text.text }}</p>\n      </ion-card-content>\n  \n    </ion-card>\n    <div class="input">\n      <form>\n        <input id="post" type="text" placeholder="Let\'s hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">\n        <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>\n      </form>\n    </div>\n  </ion-content>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu" color="light"></ion-icon>\n    </button>\n    <ion-title color="light">{{name}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card *ngFor="let text of texts" class=\'box1\'>\n\n    <div>\n      <ion-row>\n        <div>\n          <ion-item>\n            <ion-avatar item-start>\n              <img class="profileicon" src="assets/imgs/profile.png">\n            </ion-avatar>\n            <h2>Johnathan</h2>\n          </ion-item>\n        </div>\n        <div>\n          <ion-col>\n            <button ion-button icon-start clear small (click)=\'likePost(text)\' class=\'btn\'>\n              <ion-icon ios="ios-arrow-up" md="md-arrow-up" class=\'btnset\'></ion-icon>\n              <div>\n                {{text.likes}} AGREE!\n              </div>\n            </button>\n          </ion-col>\n        </div>\n      </ion-row>\n    </div>\n\n    <ion-card-content>\n      <p class="textmargin">{{ text.text }}</p>\n    </ion-card-content>\n  </ion-card>\n\n      <form>\n        <input id="post" class="txtinput" type="text" placeholder="Let\'s hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">\n        <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>\n      </form>\n\n</ion-content>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/pages/period/period.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], PeriodPage);
@@ -199,6 +199,7 @@ var DatabaseProvider = /** @class */ (function () {
                 className: 'Algebra',
                 teacherPicture: 'assets/imgs/teacher.png',
                 teacherName: 'Mr. Domingez',
+                roomNumber: "Room 745",
                 period: 'Period 1',
                 comments: [
                     {
@@ -209,27 +210,29 @@ var DatabaseProvider = /** @class */ (function () {
             },
             {
                 class_id: 1,
-                className: 'Period 2',
+                className: 'English',
                 teacherName: 'Mr. Rodriguez',
                 teacherPicture: 'assets/imgs/teacher2.png',
+                roomNumber: "Room 207",
                 period: 'Period 2',
                 comments: [
                     {
                         likes: 0,
-                        text: 'Nice Class Bro!'
+                        text: "I'm bored in class"
                     }
                 ]
             },
             {
                 class_id: 2,
-                className: 'Period 3',
+                className: 'Physics',
                 teacherName: 'Ms. Promunis',
                 teacherPicture: 'assets/imgs/teacher3.png',
+                roomNumber: "Room 302",
                 period: 'Period 2',
                 comments: [
                     {
                         likes: 0,
-                        text: 'Nice Class Bro!'
+                        text: 'Bro that Homework was easy I want a challenge'
                     }
                 ]
             },
@@ -257,7 +260,8 @@ var DatabaseProvider = /** @class */ (function () {
             output.push({
                 title: this.classes[i].teacherName,
                 image: this.classes[i].teacherPicture,
-                // classname: this.classes[i].className,
+                className: this.classes[i].className,
+                room: this.classes[i].roomNumber,
                 component: __WEBPACK_IMPORTED_MODULE_1__pages_period_period__["a" /* PeriodPage */],
                 class_id: this.classes[i].class_id
             });
@@ -432,7 +436,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar color="primary" id="sidebar">\n      <ion-row>\n        <button menuClose ion-button id="profileimg" color="light" (click)="profilePage()"></button>\n        <ion-title>Johnathan</ion-title>\n      </ion-row>\n    </ion-toolbar>\n\n  </ion-header>\n\n  <ion-content style="background-color: #FFA500; width:100%; height : 100%" padding>\n\n    <ion-list>\n\n      <button class="lists" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" floating>\n        <ion-avatar>\n          <img [src]="p.image">\n          {{p.title}} {{p.classname}}\n        </ion-avatar>\n\n      </button>\n      <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>\n\n    </ion-list>\n  </ion-content>\n\n  <ion-navbar>\n\n  </ion-navbar>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/txt-13/Desktop/decite/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar color="primary" id="sidebar">\n      <ion-row>\n        <button menuClose ion-button id="profileimg" color="light" (click)="profilePage()"></button>\n        <ion-title>Johnathan</ion-title>\n      </ion-row>\n    </ion-toolbar>\n\n  </ion-header>\n\n  <ion-content style="background-color: #FFA500; width:100%; height : 100%" padding>\n\n    <ion-list>\n\n      <button class="lists" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" floating>\n        <ion-avatar>\n          <img [src]="p.image">\n          {{p.title}}\n        </ion-avatar>\n        <p class=sideinfo>{{p.className}}</p>\n        <p class=sideinfo>{{p.room}}</p>\n\n      </button>\n      <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>\n\n    </ion-list>\n  </ion-content>\n\n  <ion-navbar>\n\n  </ion-navbar>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/Users/txt-13/Desktop/decite/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_5__providers_database_database__["a" /* DatabaseProvider */]])
     ], MyApp);

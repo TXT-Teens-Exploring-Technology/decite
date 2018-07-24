@@ -16,8 +16,10 @@
       <button class="lists" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" floating>
         <ion-avatar>
           <img [src]="p.image">
-          {{p.title}} {{p.classname}}
+          {{p.title}}
         </ion-avatar>
+        <p class=sideinfo>{{p.className}}</p>
+        <p class=sideinfo>{{p.room}}</p>
 
       </button>
       <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>

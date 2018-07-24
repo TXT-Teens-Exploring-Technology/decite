@@ -25682,8 +25682,6 @@ ion-navbar.toolbar {
   bottom: 0%;
   position: fixed;
   margin-bottom: 10px;
-  height: 40px;
-  width: 60px;
 }
 
 .scroll {
@@ -25727,8 +25725,12 @@ ion-navbar.toolbar {
   background-color: rgba(208, 208, 208, 0.98);
   border-radius: 20px;
   color: #5A5A5A;
-  height: 40px;
-  width: 50px;
+  height: 33px;
+  width: 25%;
+  bottom: 0%;
+  position: fixed;
+  right: 2%;
+  margin-bottom: 10px;
 }
 
 #post {
@@ -25802,9 +25804,20 @@ p {
 ion-avatar img {
   display: inline-block;
   vertical-align: middle;
+  width: 20px;
 }
 
 .profileicon {
   width: 30px;
   height: 30px;
+}
+
+.txtinput {
+  bottom: 0%;
+  position: fixed;
+  margin-bottom: 10px;
+}
+
+.sideinfo {
+  text-align: center;
 }

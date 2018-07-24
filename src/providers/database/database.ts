@@ -22,6 +22,7 @@ classes = [
       className: 'Algebra',
       teacherPicture: 'assets/imgs/teacher.png',
       teacherName: 'Mr. Domingez',
+      roomNumber:"Room 745",
       period: 'Period 1',
       comments:[
         {
@@ -32,27 +33,29 @@ classes = [
     },
     {
       class_id : 1,
-      className: 'Period 2',
+      className: 'English',
       teacherName: 'Mr. Rodriguez',
       teacherPicture: 'assets/imgs/teacher2.png',
+      roomNumber:"Room 207",
       period: 'Period 2',
       comments:[
         {
           likes: 0,
-          text: 'Nice Class Bro!'
+          text: "I'm bored in class"
         }
       ]
     },
     {
       class_id : 2,
-      className: 'Period 3',
+      className: 'Physics',
       teacherName: 'Ms. Promunis',
       teacherPicture: 'assets/imgs/teacher3.png',
+      roomNumber:"Room 302",
       period: 'Period 2',
       comments:[
         {
           likes: 0,
-          text:'Nice Class Bro!'
+          text:'Bro that Homework was easy I want a challenge'
         }
       ]
     },
@@ -90,7 +93,8 @@ getPages(){
       output.push({
         title: this.classes[i].teacherName,
         image: this.classes[i].teacherPicture,
-        // classname: this.classes[i].className,
+        className: this.classes[i].className,
+        room: this.classes[i].roomNumber,
         component: PeriodPage,
         class_id : this.classes[i].class_id
       })
