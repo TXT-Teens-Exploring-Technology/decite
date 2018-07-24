@@ -25741,7 +25741,7 @@ ion-navbar.toolbar {
 }
 
 #profileimg {
-  background-image: './assets/imgs/profile.png';
+  background-image: '../assets/imgs/profile2.png';
   border-radius: 20px;
   width: 40px;
   height: 40px;
@@ -25774,7 +25774,7 @@ ion-navbar.toolbar {
   width: 200px;
   height: 200px;
   border-radius: 200px;
-  margin: auto;
+  margin-left: 25%;
 }
 
 .profiletxt {
@@ -25804,7 +25804,6 @@ p {
 ion-avatar img {
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
 }
 
 .profileicon {
@@ -25819,5 +25818,55 @@ ion-avatar img {
 }
 
 .sideinfo {
-  text-align: center;
+  padding-left: 42px;
+}
+
+.info {
+  background-color: white;
+  font-size: 25px;
+  left: 0%;
+}
+
+.profileinfo {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(164, 164, 164, 0.518);
+}
+
+#editbtn {
+  background-color: white;
+  color: #5796F6;
+  margin-left: 42%;
+  margin-bottom: 25px;
+}
+
+.savebtn {
+  color: black;
+  border-radius: 20px;
+  width: 70%;
+  height: 35px;
+  margin-left: 12%;
+  font-size: 25px;
+  bottom: 0%;
+  position: fixed;
+  margin-bottom: 10px;
+}
+
+.menubtn {
+  border-radius: 10px;
+  background-image: "./assets/imgs/profile2copy.png";
+}
+
+.profileFont {
+  font-style: italic;
+  font-size: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.align {
+  bottom: 0%;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 20%;
 }

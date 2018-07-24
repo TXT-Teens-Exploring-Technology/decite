@@ -2,8 +2,18 @@
   <ion-header>
     <ion-toolbar color="primary" id="sidebar">
       <ion-row>
-        <button menuClose ion-button id="profileimg" color="light" (click)="profilePage()"></button>
-        <ion-title>Johnathan</ion-title>
+        <button menuClose ion-button class="menubtn" id="close-image" (click)="profilePage()">
+          <img src="./assets/imgs/profile2copy.png">
+        </button>
+        <ion-title> Ricardo G.</ion-title>
+        <ion-list>
+          <div>
+            <p class='align'>VerbumDei</p>
+          </div>
+          <!-- <div>
+            <p class='align'>11th</p>
+          </div> -->
+        </ion-list>
       </ion-row>
     </ion-toolbar>
 
@@ -15,11 +25,10 @@
 
       <button class="lists" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" floating>
         <ion-avatar>
-          <img [src]="p.image">
-          {{p.title}}
+          <img [src]="p.image"> {{p.title}}
         </ion-avatar>
-        <p class=sideinfo>{{p.className}}</p>
-        <p class=sideinfo>{{p.room}}</p>
+        <p style="color: #222; font:bold" class=sideinfo>{{p.className}}</p>
+        <p style="color: #222;" class=sideinfo>{{p.room}}</p>
 
       </button>
       <button id="addmenu" ion-button (click)="addMenu()"> Add New Channel</button>

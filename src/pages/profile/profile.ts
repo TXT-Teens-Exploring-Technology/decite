@@ -26,9 +26,7 @@ export class ProfilePage {
 
 
   getProfile(){
-    var input = "afa"
-
-    console.log(input);
+    this.navCtrl
   }
 
   constructor(public navCtrl: NavController, public navParams: NavParams, ) {

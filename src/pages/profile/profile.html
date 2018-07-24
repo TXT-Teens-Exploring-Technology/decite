@@ -5,21 +5,59 @@
 -->
 <ion-header>
 
-    <ion-navbar>
-      <ion-title>Johnathan</ion-title>
-    </ion-navbar>
-  
-  </ion-header>
-  
-  
-  <ion-content padding>
-      <ion-avatar item-start>
-        <img  class='proimg' src="assets/imgs/profile.png">
-      </ion-avatar>
-  
-      <ion-list>
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-avatar item-start>
+      <img class='proimg' src="assets/imgs/profile2.png">
+    </ion-avatar>
+    <button id="editbtn">Edit Profile</button>
+
+    <div class="profileinfo">
+      <button class="info">
+        <ion-icon ios="ios-contact" md="md-contact">
+          Name: <p class="profileFont">Ricardo Godinez</p>
+        </ion-icon>
+      </button>
+    </div>
+
+    <div  class="profileinfo">
+      <button class="info">
+        <ion-icon ios="ios-home" md="md-home">
+          School: <p class="profileFont">Verbum Dei</p>
+        </ion-icon>
+      </button>
+    </div>
+
+    <div  class="profileinfo">
+      <button class="info">
+        <ion-icon ios="ios-school" md="md-school">
+          Grade: <p class="profileFont">11th</p>
+        </ion-icon>
+      </button>
+    </div>
+
+    <div  class="profileinfo">
+      <button class="info">
+        <ion-icon ios="ios-mail" md="md-mail">
+          Contact: <p class="profileFont">RG3@gmail.com</p>
+        </ion-icon>
+      </button>
+    </div>
+  </div>
+
+  <button ion-button (click)="getProfile()" class="savebtn">Confirm</button>
+
+    
+      <!-- <ion-list>
       <ion-item>
-        <ion-label color="dark" stacked>Name</ion-label>
+        <ion-label color="dark" stacked></ion-label>
         <ion-input type="text" placeholder=""></ion-input>
       </ion-item>
       <ion-item>
@@ -40,5 +78,5 @@
 
       <button (click)="getProfile()">Save</button>
 
-    </ion-list>
-  </ion-content>
+    </ion-list> -->
+</ion-content>
