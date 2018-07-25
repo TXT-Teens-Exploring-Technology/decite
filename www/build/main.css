@@ -25714,6 +25714,7 @@ ion-navbar.toolbar {
 
 .btn {
   float: right;
+  position: fixed;
   right: 0%;
   color: #660000;
   font-size: 20px;
@@ -25816,11 +25817,17 @@ p {
   background-color: white;
   font-size: 25px;
   left: 0%;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 .profileinfo {
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(164, 164, 164, 0.518);
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 #editbtn {
@@ -25894,4 +25901,8 @@ p {
   margin-left: 20px;
   height: 20px;
   float: left;
+}
+
+page-home .move {
+  left: 50px;
 }

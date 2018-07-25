@@ -26,7 +26,7 @@ export class DatabaseProvider {
       period: 'Period 1',
       comments: [
         {
-          likes: 19,
+          likes: 0,
           text: 'The atmosphere of Mr. Domingez’s class is off. It feels like im trapped.',
         }
       ]
