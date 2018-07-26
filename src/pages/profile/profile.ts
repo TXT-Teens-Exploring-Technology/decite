@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
+import { DatabaseProvider } from '../../providers/database/database';
 // import { profiles } from '../../providers/database/database';
 
 
@@ -18,22 +19,32 @@ import { Storage } from '@ionic/storage';
 })
 export class ProfilePage {
   todo = {}
-  logForm() {
-    console.log(this.todo)
+  user;
+  editOn=false
+
+  constructor( public database: DatabaseProvider ){
+    this.user = this.database.getUser();
   }
+  editButton(){
+    this.editOn=true;
+  }
+  
+  confirmButton(){
+    this.database.editUser(this.user.name, this.user.school, this.user.grade, this.user.contact)
+    this.editOn=false;
+  }
+
+  }
+
+
+
+
+
+
 
   
 
 
-  getProfile(){
-    this.navCtrl
-  }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
-  }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilePage');
-  }
 
-}

@@ -25778,7 +25778,9 @@ ion-navbar.toolbar {
   width: 200px;
   height: 200px;
   border-radius: 200px;
-  margin-left: 36%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .profiletxt {
@@ -25791,7 +25793,7 @@ ion-list {
 
 .lists {
   background-color: #FFA500;
-  border: 2px;
+  border: 0px;
   border-color: rgba(255, 166, 0, 0);
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -25836,8 +25838,10 @@ p {
 #editbtn {
   background-color: white;
   color: #5796F6;
-  margin-left: 44%;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .savebtn {

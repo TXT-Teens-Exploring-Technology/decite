@@ -15,6 +15,13 @@ import { Storage } from '@ionic/storage';
 @Injectable()
 export class DatabaseProvider {
 
+  user = {
+    name: "Ricardo Godinez",
+    school: "Verbum Dei",
+    grade: "11th",
+    contact: "RG3@gmail.com",
+
+  }
 
   classes = [
     {
@@ -117,16 +124,14 @@ export class DatabaseProvider {
   }
 
   //For the Profile Data
-  getprofile() {
-    let output = [];
-    for (let i = 0; i < this.profiles.length; i++) {
-      output.push({
-        userName: this.profiles[i].name,
-        userSchool: this.profiles[i].school,
-        userGrade: this.profiles[i].grade,
-        userContact: this.profiles[i].contact,
-      })
-    }
-    return output;
+  getUser(){
+    return this.user;
+  }
+
+  editUser(name,school, grade, contact){
+    this.user.name = name;
+    this.user.school = school;
+    this.user.grade = grade;
+    this.user.contact = contact;
   }
 }

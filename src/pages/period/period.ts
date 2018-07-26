@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { DatabaseProvider } from '../../providers/database/database';
 
 
 @Component({
@@ -12,8 +13,9 @@ export class PeriodPage {
   itemCount = 0;
   info;
   name = 'No Class Selected';
+  user;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public database: DatabaseProvider) {
     this.info = this.navParams.get('info');
     if(this.info != undefined){
       this.texts = this.info.comments;
@@ -36,6 +38,7 @@ export class PeriodPage {
       };
       this.texts = this.info.comments;
       this.name = this.info.teacherName;
+      this.user = this.database.getUser();
     }
   }
 

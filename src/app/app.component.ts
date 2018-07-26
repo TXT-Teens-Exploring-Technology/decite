@@ -27,11 +27,14 @@ export class MyApp {
 
   pages: Array<{ title: string, component: any }>;
 
+  user;
+
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public db: DatabaseProvider) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = this.db.getPages();
+    this.user = this.db.getUser();
     console.log(this.pages);
   }
 
