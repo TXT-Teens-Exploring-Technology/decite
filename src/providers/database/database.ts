@@ -125,6 +125,7 @@ export class DatabaseProvider {
 
   //For the Profile Data
   getUser(){
+    console.log('im being called');
     return this.user;
   }
 

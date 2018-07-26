@@ -35,7 +35,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = this.db.getPages();
     this.user = this.db.getUser();
-    console.log(this.pages);
+
   }
 
   initializeApp() {

@@ -33,12 +33,12 @@
 
 .btn{
     float:right;
-    position: fixed;
     right:0%;
     color:#660000;
     font-size: 20px;
     padding-right:30px;
     padding-left:0px;
+    position: fixed;
     font-family: 'Helvetica'
 }
 
@@ -49,10 +49,9 @@
     height: 33px;
     width:25%;
     bottom: 0%;
-    position: fixed;
     right:2%;
     margin-bottom:10px;
-    
+    position: fixed;
 
 }
 
@@ -138,9 +137,9 @@ p{
 
 .txtinput{
     bottom: 0%;
-    position: fixed;
     margin-bottom: 10px;
-    border:rgba(255, 166, 0, 0) solid 1px
+    border:rgba(255, 166, 0, 0) solid 1px;
+    position: fixed;
 
 }
 

@@ -13,7 +13,7 @@ export class PeriodPage {
   itemCount = 0;
   info;
   name = 'No Class Selected';
-  user;
+  user = {name: 'loading'};
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public database: DatabaseProvider) {
     this.info = this.navParams.get('info');
@@ -40,6 +40,10 @@ export class PeriodPage {
       this.name = this.info.teacherName;
       this.user = this.database.getUser();
     }
+  }
+
+  ionViewDidEnter(){
+    this.user = this.database.getUser();
   }
 
   addPost() {

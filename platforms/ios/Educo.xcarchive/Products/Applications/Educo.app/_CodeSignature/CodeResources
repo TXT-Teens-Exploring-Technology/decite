@@ -98,11 +98,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		ALv7HI8orEt/zMOVB7wb0nGugVk=
+		rxWxzFYWUV2fcU90rdnZBxHiFdg=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		IRjPQxa7iE2azxrONYchhrgjg1k=
+		JVHH2sYi9W4RK8WjVFioegc/Xnc=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		l0884kcQvET8TtFmEvGhP1eEJ4U=
+		z47Kw3gzIdGjkPbThpoq+KSdV7k=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		L7hR1eFyx+XqxmdqYcQ25fWOes0=
+		8el1qGar8hP+TPcYrSqp4mfrQ48=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -354,7 +354,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		PcbFBdwv4fhm6xztusi+umYDTUM=
+		M0jXYmzBTRKSmL8bPCqU/iaLSIg=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -362,7 +362,7 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		rBRCJ1Jl7zdMqNJ4FBu0UYNwaG8=
+		Y50LbT1KAkSCETH8GMNFR7+XHrQ=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
@@ -382,7 +382,7 @@
 		</data>
 		<key>www/build/vendor.js.map</key>
 		<data>
-		K+h4vBKINK6vfja6owEI/+Safis=
+		2XbdAhFoNsHwcqjmiSf2JXHR5SI=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -700,22 +700,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ALv7HI8orEt/zMOVB7wb0nGugVk=
+			rxWxzFYWUV2fcU90rdnZBxHiFdg=
 			</data>
 			<key>hash2</key>
 			<data>
-			D7IGDrJIVRIAil7zsv64ojFYV2VahGbqTYcaKhU+Hrs=
+			lZ6mAQlOpKw+8rU/RLN4jdZRcU/Eaf0jWHGGSK9NR0o=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IRjPQxa7iE2azxrONYchhrgjg1k=
+			JVHH2sYi9W4RK8WjVFioegc/Xnc=
 			</data>
 			<key>hash2</key>
 			<data>
-			VYV2KmUGnmFPC1FDXrDnjGtF+9vc7HuOvFc8CPWWZLc=
+			m6xO6R5Oi1xe/iBBxBvvSHNHBUGndraXI3HnE1GSbGs=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -733,11 +733,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l0884kcQvET8TtFmEvGhP1eEJ4U=
+			z47Kw3gzIdGjkPbThpoq+KSdV7k=
 			</data>
 			<key>hash2</key>
 			<data>
-			f1KQhaW4/ahvIYXks118HDmtipzviUeptjNZc8p1YBg=
+			oGkscOshpEY1VdH5PwnzLoiysI6k0VWdKM2WsLxh5V0=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -920,11 +920,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L7hR1eFyx+XqxmdqYcQ25fWOes0=
+			8el1qGar8hP+TPcYrSqp4mfrQ48=
 			</data>
 			<key>hash2</key>
 			<data>
-			MRLYkpOIRWddn3JdsYRKLmLidjOMvU7h45qtuH/jldM=
+			c23+XBG69cw/txx7ECe0w7zHE87nB9ufcV78v6ZpFsE=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -1382,11 +1382,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PcbFBdwv4fhm6xztusi+umYDTUM=
+			M0jXYmzBTRKSmL8bPCqU/iaLSIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			tKFTB7ROY7Hlk65G7CZapJsjYvJvRY0X/NTFFL4QiJ8=
+			DphUthgKr20ataKb0+R08u10AH9bjAhw3OhLRBD31yE=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -1404,11 +1404,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rBRCJ1Jl7zdMqNJ4FBu0UYNwaG8=
+			Y50LbT1KAkSCETH8GMNFR7+XHrQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			u7fHtPTqMYxnnzHpTkjzFaAUAPieWI2tfOjoJJpYkwY=
+			JeNjsVy0kGpa/V/BeyHibFjT4tFH4OThw+cfFBZOjQw=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
@@ -1459,11 +1459,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K+h4vBKINK6vfja6owEI/+Safis=
+			2XbdAhFoNsHwcqjmiSf2JXHR5SI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q7y7GqGcrzIPz5T5YJABgl5KcAhHmMAiGzrIGezOldc=
+			mJI3Uk4bQHSAiWlEV/0hbXnhh/Rc51tmUOZjL+vmuzc=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>

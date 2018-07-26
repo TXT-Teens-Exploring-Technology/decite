@@ -18,7 +18,7 @@
             <ion-avatar item-start>
               <img class="profileicon" src="assets/imgs/cathy.png">
             </ion-avatar>
-            <h2>Cathy B.</h2>
+            <h2>Cathy R.</h2>
           </ion-item>
         </div>
         <div>
@@ -36,11 +36,6 @@
       <p class="textmargin">Giving homework right off the textbook isn’t challenging enough. </p>
     </ion-card-content>
   </ion-card>
-
-  <form>
-    <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
-    <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
-  </form>
 
   <!-- other users -->
   <ion-card class='box1'>
@@ -73,11 +68,6 @@
     </ion-card-content>
   </ion-card>
 
-  <form>
-    <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
-    <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
-  </form>
-
  <!-- other users -->
  <ion-card class='box1'>
 
@@ -108,11 +98,6 @@
       <p class="textmargin">I like how your lesson plan is scheduled, I hope you keep it.</p>
     </ion-card-content>
   </ion-card>
-
-      <form>
-        <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
-        <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
-      </form>
 
 <!-- working features -->
   <ion-card *ngFor="let text of texts" class='box1'>
@@ -146,7 +131,7 @@
   </ion-card>
   
 <ion-row>
-  <form>
+  <form> 
     <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
     <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
   </form>
