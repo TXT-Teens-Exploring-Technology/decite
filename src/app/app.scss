@@ -52,14 +52,17 @@
     position: fixed;
     right:2%;
     margin-bottom:10px;
+    
 
 }
 
 #post{
     background-color: rgb(223, 222, 222);
     border-radius: 20px;
-    width: 20em;
-    height: 30px
+    width: 70%;
+    height: 33px;
+    position: fixed;
+    text-align: center;
 }
 
 #profileimg{
@@ -96,7 +99,7 @@
     width:200px;
     height: 200px;
     border-radius: 200px;
-    margin-left: 25%;
+    margin-left: 36%;
 }
 
 .profiletxt{
@@ -135,12 +138,9 @@ p{
     bottom: 0%;
     position: fixed;
     margin-bottom: 10px;
+    border:rgba(255, 166, 0, 0) solid 1px
 
 }
-
-// .sideinfo{
-//    padding-left:60px;
-// }
 
 .info{
     background-color: white;
@@ -157,7 +157,7 @@ p{
 #editbtn{
     background-color:white;
     color:#5796F6;
-    margin-left: 42%;
+    margin-left: 44%;
     margin-bottom:25px
 }
 
@@ -224,4 +224,8 @@ p{
     margin-left: 20px;
     height: 20px;
     float: left;    
+}
+
+.sideMenuInfo{
+    text-align: center;
 }

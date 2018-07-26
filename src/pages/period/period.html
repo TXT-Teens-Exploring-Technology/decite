@@ -18,7 +18,7 @@
             <ion-avatar item-start>
               <img class="profileicon" src="assets/imgs/cathy.png">
             </ion-avatar>
-            <h2>Cathy R.</h2>
+            <h2>Cathy B.</h2>
           </ion-item>
         </div>
         <div>
@@ -146,10 +146,12 @@
       <p class="textmargin">{{ text.text }}</p>
     </ion-card-content>
   </ion-card>
-
+  
+<ion-row>
   <form>
     <input id="post" class="txtinput" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
     <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
   </form>
+</ion-row>
 
 </ion-content>

@@ -54,7 +54,10 @@ export class MyApp {
   }
   addMenu(){
     let otherPages = [
-      { title: 'Ms. Anderson', component: PeriodPage, class_id: 0}
+      { title: 'Ms. Anderson', component: PeriodPage, class_id: 0,
+        image: 'assets/imgs/addTeacher.png',
+
+    }
     ]
     this.pages= this.pages.concat(otherPages);
   }
