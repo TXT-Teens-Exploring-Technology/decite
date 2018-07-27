@@ -24,9 +24,13 @@ import { ProfilePage } from '../pages/profile/profile';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      scrollAssist: true,
+      autoFocusAssist: true
+    }),
     FormsModule,
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+
   ],  
   bootstrap: [IonicApp],
   entryComponents: [

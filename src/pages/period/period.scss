@@ -1,6 +1,15 @@
-page-home {
+page-list {
     .move {
         left: 50px;
     }
+    .inline{
+        display: inline-block;
+        width: 150px;
+    }
+
+    .type{
+        position: initial !important;
+    }
 }
+
 

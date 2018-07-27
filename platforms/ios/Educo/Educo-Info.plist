@@ -91,6 +91,11 @@
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
         </dict>
+        <key>169.254.144.162</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
       </dict>
       <key>NSAllowsArbitraryLoads</key>
       <true/>

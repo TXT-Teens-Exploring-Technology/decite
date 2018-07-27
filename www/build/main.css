@@ -25691,7 +25691,7 @@ ion-navbar.toolbar {
 
 .box1 {
   width: 100%;
-  margin: 0%;
+  margin: 10px 0;
 }
 
 .toolbar-background {
@@ -25714,12 +25714,12 @@ ion-navbar.toolbar {
 
 .btn {
   float: right;
-  right: 0%;
+  left: 0%;
   color: #660000;
   font-size: 20px;
   padding-right: 30px;
   padding-left: 0px;
-  position: fixed;
+  position: relative;
   font-family: 'Helvetica';
 }
 
@@ -25728,20 +25728,28 @@ ion-navbar.toolbar {
   border-radius: 20px;
   color: #5A5A5A;
   height: 33px;
-  width: 25%;
+  width: 35%;
   bottom: 0%;
   right: 2%;
+  margin-top: 10px;
   margin-bottom: 10px;
-  position: fixed;
+  position: relative;
+  margin-right: 50px;
 }
 
 #post {
   background-color: #dfdede;
   border-radius: 20px;
-  width: 70%;
+  width: 100%;
   height: 33px;
-  position: fixed;
+  position: relative;
   text-align: center;
+  bottom: 0%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: rgba(255, 166, 0, 0) solid 1px;
+  position: relative;
+  left: 0%;
 }
 
 #profileimg {
@@ -25811,13 +25819,6 @@ p {
   height: 30px;
 }
 
-.txtinput {
-  bottom: 0%;
-  margin-bottom: 10px;
-  border: rgba(255, 166, 0, 0) solid 1px;
-  position: fixed;
-}
-
 .info {
   background-color: white;
   font-size: 25px;
@@ -25852,7 +25853,6 @@ p {
   margin-left: 12%;
   font-size: 25px;
   bottom: 0%;
-  position: fixed;
   margin-bottom: 10px;
 }
 
@@ -25914,6 +25914,15 @@ p {
   text-align: center;
 }
 
-page-home .move {
+page-list .move {
   left: 50px;
+}
+
+page-list .inline {
+  display: inline-block;
+  width: 150px;
+}
+
+page-list .type {
+  position: initial !important;
 }
