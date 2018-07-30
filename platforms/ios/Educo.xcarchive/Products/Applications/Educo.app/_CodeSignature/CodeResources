@@ -98,11 +98,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		OzvVGcVlnI6/gMxPi+Wg2vGU2RQ=
+		KpzOJqunK5KN8vPjqCs3QOKtJ6E=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		95vPNH9UgdoR0hk6bE6LbNeXjBU=
+		SQL0H1m4/EqCys91E/iM+4Cm5S8=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		87daZQrbpANNuHFG9d9pg8Lkrac=
+		nsS3LX1YMfO5ddP3rz9qowOGttE=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		JKpBB882WyhkPa/7YZxpGQzhSL0=
+		NhnM0RzrihooXXqu5ec8CnUGuGY=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		5UcC9EH/6e2PXvCnk9IuQ/fdZSQ=
+		KFJKMSki9i3YQ65YuV6oXmxEovg=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>www/assets/imgs/teacher.png</key>
 		<data>
-		YImsHTHFlPDNAR71dPF2Oz5+LEo=
+		dmelFga0h3PlfBM100zIklbhSog=
 		</data>
 		<key>www/assets/imgs/teacher2.png</key>
 		<data>
@@ -342,11 +342,11 @@
 		</data>
 		<key>www/assets/imgs/teacher3.png</key>
 		<data>
-		7hAt9Yec7U+sVOlSPwwweFrXU5c=
+		E9/0HUo+CQ08dLl0FyDasyy7ZVs=
 		</data>
 		<key>www/assets/imgs/teacher4.png</key>
 		<data>
-		eVZtKAfJis5MJf/ghduUl1shza8=
+		1UnnySFZNFHWL5jTz/i1c3ORPuI=
 		</data>
 		<key>www/build/0.js</key>
 		<data>
@@ -358,7 +358,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		S93oimpBWhQ5FNmog+Z1ncbzSpA=
+		gf2A+2Z+9et1nKtMpKbEpFFXqQw=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -366,11 +366,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		GQDDOx9eGc2fzY7kEGi5WruVlYA=
+		ah1CYpO4x5OOEuEDjSLrf0HqnxE=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		9Pa/+PyjKejPOd9XwBNjU9w44sA=
+		LUD0blaAbL0If1JpuEOhWF/EzGE=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -386,7 +386,7 @@
 		</data>
 		<key>www/build/vendor.js.map</key>
 		<data>
-		AnroPA66CMdYvjwIyVPqzI+c0Tk=
+		09o+60YTZisSQoz4AwZSBlo1/88=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -704,22 +704,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OzvVGcVlnI6/gMxPi+Wg2vGU2RQ=
+			KpzOJqunK5KN8vPjqCs3QOKtJ6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			tuI8hw1whLs0gYmsmkYyF/WuK9RqIZ+6jWu+oOpKoWk=
+			ZIZI6GVwmVbJXCFr5IPZh2TcxvD3u/lvyviPubZlQ6E=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			95vPNH9UgdoR0hk6bE6LbNeXjBU=
+			SQL0H1m4/EqCys91E/iM+4Cm5S8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WAdApygENruhapuZKxdi1RQNgE6/+4tXqFonsR5WHv4=
+			OhBUnT5kToWMzRoYV0Oig4WcjJebsHDxofweLN+CYxI=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -737,11 +737,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			87daZQrbpANNuHFG9d9pg8Lkrac=
+			nsS3LX1YMfO5ddP3rz9qowOGttE=
 			</data>
 			<key>hash2</key>
 			<data>
-			csrHcRoCqqmUcsh1u9B53k2fZ1nmOTKrfBFyZiNJZwc=
+			bBjqY3OCzIaKIPt0yCU+xpS9EzUfDJP3Lj/h14fzH+U=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -924,22 +924,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JKpBB882WyhkPa/7YZxpGQzhSL0=
+			NhnM0RzrihooXXqu5ec8CnUGuGY=
 			</data>
 			<key>hash2</key>
 			<data>
-			SsTG0rgb4fGEuho1Ow5uPdHJJMEC0feE1KeAo9dMFZs=
+			2XWR5n7FPRJ07TjkinQUZD6whPSossaxHSt2SPoNUrc=
 			</data>
 		</dict>
 		<key>config.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5UcC9EH/6e2PXvCnk9IuQ/fdZSQ=
+			KFJKMSki9i3YQ65YuV6oXmxEovg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/hFXAMVdK5m74ebUBAyyt1ik6PQuvL9t6GcsQVjtkQU=
+			/t9gRVeAjkftQDhxMzjHohnzbMdGEA3sz4xvqXu0gEE=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -1331,11 +1331,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YImsHTHFlPDNAR71dPF2Oz5+LEo=
+			dmelFga0h3PlfBM100zIklbhSog=
 			</data>
 			<key>hash2</key>
 			<data>
-			X85vHAY+AcbAFnliJoD+C9SSHyyG++NAdVf+ukNqa2s=
+			sMc2tJxjL8TkBfebVbdYjyXzg2XsTELyGmBsS0i3Jsw=
 			</data>
 		</dict>
 		<key>www/assets/imgs/teacher2.png</key>
@@ -1353,22 +1353,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7hAt9Yec7U+sVOlSPwwweFrXU5c=
+			E9/0HUo+CQ08dLl0FyDasyy7ZVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			lmC0OPIa5Rx1I1/FCrjmnD/JKJo/Z1Aqaj/ZRnMUc+Y=
+			qHgEBXrqRb3G48cqug7pGxcb3l5i+iOyedUHuMw1naE=
 			</data>
 		</dict>
 		<key>www/assets/imgs/teacher4.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eVZtKAfJis5MJf/ghduUl1shza8=
+			1UnnySFZNFHWL5jTz/i1c3ORPuI=
 			</data>
 			<key>hash2</key>
 			<data>
-			W6s6cfAOcNZFDexpU+vkJNhAXU+Q30c0b9TA6igU3k4=
+			62haUz/dvNXrvDPMfo+zu4REkSHlnBOmJ489PfGrGPI=
 			</data>
 		</dict>
 		<key>www/build/0.js</key>
@@ -1397,11 +1397,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S93oimpBWhQ5FNmog+Z1ncbzSpA=
+			gf2A+2Z+9et1nKtMpKbEpFFXqQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			0H+0OlT6EE/OKBeDgRMlll4bCCmAmTJxX8VPDRoGrME=
+			GdRo4QVU2PFb83A42ivJTjnWfkW57+Z4hwNLJsSgvqw=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -1419,22 +1419,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GQDDOx9eGc2fzY7kEGi5WruVlYA=
+			ah1CYpO4x5OOEuEDjSLrf0HqnxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Bm549Qc3cIDUXbwNF5/XVk6R2S2NaV/l9rjXveARkw=
+			iwgFk+d3Ns+PoVnaaWOynchw79ccR5bluhvDMexjXuQ=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9Pa/+PyjKejPOd9XwBNjU9w44sA=
+			LUD0blaAbL0If1JpuEOhWF/EzGE=
 			</data>
 			<key>hash2</key>
 			<data>
-			t19w0BOmz97BY62FR9pQ4CaWu6CRDtWzmoxhmNFRLJo=
+			yiUcRD4jIZFv+jmeoSQXd6hCQuyd7bg2SIhXAYg7IoE=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>
@@ -1474,11 +1474,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AnroPA66CMdYvjwIyVPqzI+c0Tk=
+			09o+60YTZisSQoz4AwZSBlo1/88=
 			</data>
 			<key>hash2</key>
 			<data>
-			fI02IxJLqA6rntezDGGqABqZBp3E/aPsUt6h+FfmIKI=
+			8hBUYRGC1fOJ9OA2oSGjES3jvspNrmW5xLUz/NRgyMI=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
