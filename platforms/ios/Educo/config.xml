@@ -36,7 +36,7 @@
     <name>Educo</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://169.254.24.27:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -65,6 +65,8 @@
     <allow-navigation href="http://169.254.244.148:8100" />
     <allow-navigation href="http://169.254.204.164:8100" />
     <allow-navigation href="http://169.254.82.151:8100" />
+    <allow-navigation href="http://169.254.2.88:8100" />
+    <allow-navigation href="http://169.254.24.27:8100" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <icon height="57" src="resources/ios/icon/icon.png" width="57" />

@@ -146,25 +146,27 @@
   </ion-row> -->
 
 
-    <ion-footer>
-      <ion-toolbar class="footer">
-        <form (ngSubmit)="addPost()" id="custom-input">
-          <ion-row style="margin-top: 34px;">
-            <ion-col col-10 class="type">
-                <ion-item class="custom-input">
-                    <ion-input type="text" [(ngModel)]="newText"  name="title" placeholder="Let's hear your feedback!"></ion-input>
-                  </ion-item>
-            </ion-col>
-            <ion-col col-2 class="type">
-                <button ion-button type="submit" block id="custom-btn">
-                  <img src="assets/arrow.png" alt="">
-                </button>
-              </ion-col>
-          </ion-row>
-    
-    
-    
-        </form>
-      </ion-toolbar>
-    </ion-footer>
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar class="footer">
+    <form (ngSubmit)="addPost()" id="custom-input">
+      <ion-row style="margin-top: 34px;">
+        <ion-col col-10 class="type">
+            <ion-item class="custom-input">
+                <ion-input type="text" [(ngModel)]="newText"  name="title" placeholder="Let's hear your feedback!"></ion-input>
+              </ion-item>
+        </ion-col>
+        <ion-col col-2 class="type">
+            <button ion-button type="submit" block id="custom-btn">
+              <img src="assets/arrow.png" alt="">
+            </button>
+          </ion-col>
+      </ion-row>
+
+
+
+    </form>
+  </ion-toolbar>
+</ion-footer>

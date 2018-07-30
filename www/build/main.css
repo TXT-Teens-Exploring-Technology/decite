@@ -25944,6 +25944,12 @@ p {
   background: none !important;
 }
 
+.custom {
+  background-color: #FFBF48 !important;
+  border-top: solid 0.55px white;
+  border-bottom: none !important;
+}
+
 page-list .move {
   left: 50px;
 }

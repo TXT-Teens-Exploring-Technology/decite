@@ -16,7 +16,7 @@ import { Storage } from '@ionic/storage';
 export class DatabaseProvider {
 
   user = {
-    name: "Ricardo Godinez",
+    name: "Ricardo G.",
     school: "Verbum Dei",
     grade: "11th",
     contact: "RG3@gmail.com",
@@ -86,7 +86,7 @@ export class DatabaseProvider {
 
   profiles = [
     {
-      name: 'Ricardo Godinez',
+      name: 'Ricardo G.',
       school: 'Verbum Dei',
       grade: '11th',
       contact: '323-394-6216',
