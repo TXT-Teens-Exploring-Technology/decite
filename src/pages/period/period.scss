@@ -10,6 +10,92 @@ page-list {
     .type{
         position: initial !important;
     }
+
+    .scroll-content{
+        padding: 16px 5px 0 5px !important; 
+    }
+
+    .content{
+        padding: 16px 5px 0 5px !important; 
+    }
+
+    .card{
+        box-shadow: none !important;
+        border-bottom: solid 0.55px rgba(0,0,0,0.5)
+    }
+
+    .textmargin{
+        padding-left: 60px !important;
+    }
+
+    .card-content{
+        padding-top: 0 !important;
+        margin-top: -10px;
+    }
+
+    .custom-input{
+        position: relative;
+    }
+
+    ion-footer {
+        left: 0;
+        bottom: -2px;
+        position: absolute;
+        z-index: 10;
+        display: block;
+        width: 100%;
+        }
+
+
+        .footer .toolbar-background{
+            background-color: white !important;
+            border: none !important;
+        }
+
+
+        .input{
+            margin-bottom: 0 !important;
+        }
+        .type{
+            padding: 0 !important;
+        }
+
+        #custom-btn{
+            background-color: white !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        #custom-btn img{
+            height: 80%;
+        }
+
+        .footer{
+            padding: 0 0px 5px 3px !important;
+        }
+
+        .box1 .row{
+            height: 60px !important;
+            overflow: hidden;
+        }
+
+        .item-ios {
+            background: transparent !important;
+            }
+            
+            .btn {
+
+                font-size: 16px;
+
+                }
+
+                .custom-input{
+                    background-color: rgba(196,196,196,0.4) !important;
+                    border: solid 0.55px #c7c7c7;
+                    margin-bottom: -10px;
+                }
+        
 }
+
 
 

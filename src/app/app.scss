@@ -88,7 +88,7 @@
     bottom: 0%;
     position: fixed;
     width:250px;
-    height:20px;
+    height:35px;
     border-radius: 20px;
     margin-left:15px;
     background-color: white;
@@ -114,13 +114,20 @@
     font-size:20px;
 }
 
+#close-image {
+    background-color: #FFBF48;
+
+    }
+.toolbar-ios-primary .toolbar-background-ios {
+    background-color: #FFBF48;
+    }
 
 ion-list{
-    background-color: #FFA500;
+    background-color: #FFBF48;
 }
 
 .lists{
-    background-color: #FFA500;
+    background-color: #FFBF48;
     border:0px;
     border-color: rgba(255, 166, 0, 0);
     align-items: flex-start;
@@ -199,12 +206,19 @@ p{
     margin-left:20%;
 }
 
-.addChannel{
-    border-bottom: 1px solid grey;
-    bottom:0%;
-    position: fixed;
-    margin-bottom: 50px;
-}
+
+    .addChannel {
+        border-bottom: 1px solid grey;
+        bottom: 0%;
+        position: fixed;
+        /* margin-bottom: 50px; */
+        width: 100%;
+        height: 82px;
+        margin: 0;
+        left: 0;
+        border-top: solid thin white;
+        }
+
 
 #teacherimg{
     height: 50px;
@@ -233,3 +247,19 @@ p{
     text-align: center;
 }
 
+
+.toolbar-background{
+    border: none;
+}
+
+.toolbar{
+    border-bottom: solid thin white !important;
+}
+.lists{
+    border: none !important;
+}
+
+.item-inner{
+    border: none !important;
+    background: none !important;
+}

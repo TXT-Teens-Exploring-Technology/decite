@@ -55,6 +55,16 @@
     <allow-navigation href="http://10.27.22.218:8100" />
     <allow-navigation href="http://169.254.38.129:8100" />
     <allow-navigation href="http://169.254.144.162:8100" />
+    <allow-navigation href="http://169.254.17.80:8100" />
+    <allow-navigation href="http://169.254.191.53:8100" />
+    <allow-navigation href="http://10.27.23.209:8100" />
+    <allow-navigation href="http://169.254.93.178:8100" />
+    <allow-navigation href="http://169.254.136.249:8100" />
+    <allow-navigation href="http://169.254.199.246:8100" />
+    <allow-navigation href="http://10.27.26.200:8100" />
+    <allow-navigation href="http://169.254.244.148:8100" />
+    <allow-navigation href="http://169.254.204.164:8100" />
+    <allow-navigation href="http://169.254.82.151:8100" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <icon height="57" src="resources/ios/icon/icon.png" width="57" />

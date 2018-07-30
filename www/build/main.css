@@ -25769,7 +25769,7 @@ ion-navbar.toolbar {
   bottom: 0%;
   position: fixed;
   width: 250px;
-  height: 20px;
+  height: 35px;
   border-radius: 20px;
   margin-left: 15px;
   background-color: white;
@@ -25795,12 +25795,20 @@ ion-navbar.toolbar {
   font-size: 20px;
 }
 
+#close-image {
+  background-color: #FFBF48;
+}
+
+.toolbar-ios-primary .toolbar-background-ios {
+  background-color: #FFBF48;
+}
+
 ion-list {
-  background-color: #FFA500;
+  background-color: #FFBF48;
 }
 
 .lists {
-  background-color: #FFA500;
+  background-color: #FFBF48;
   border: 0px;
   border-color: rgba(255, 166, 0, 0);
   -webkit-box-align: start;
@@ -25882,7 +25890,12 @@ p {
   border-bottom: 1px solid grey;
   bottom: 0%;
   position: fixed;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  width: 100%;
+  height: 82px;
+  margin: 0;
+  left: 0;
+  border-top: solid thin white;
 }
 
 #teacherimg {
@@ -25914,6 +25927,23 @@ p {
   text-align: center;
 }
 
+.toolbar-background {
+  border: none;
+}
+
+.toolbar {
+  border-bottom: solid thin white !important;
+}
+
+.lists {
+  border: none !important;
+}
+
+.item-inner {
+  border: none !important;
+  background: none !important;
+}
+
 page-list .move {
   left: 50px;
 }
@@ -25925,4 +25955,98 @@ page-list .inline {
 
 page-list .type {
   position: initial !important;
+}
+
+page-list .scroll-content {
+  padding: 16px 5px 0 5px !important;
+}
+
+page-list .content {
+  padding: 16px 5px 0 5px !important;
+}
+
+page-list .card {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-bottom: solid 0.55px rgba(0, 0, 0, 0.5);
+}
+
+page-list .textmargin {
+  padding-left: 60px !important;
+}
+
+page-list .card-content {
+  padding-top: 0 !important;
+  margin-top: -10px;
+}
+
+page-list .custom-input {
+  position: relative;
+}
+
+page-list ion-footer {
+  left: 0;
+  bottom: -2px;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 100%;
+}
+
+page-list .footer .toolbar-background {
+  background-color: white !important;
+  border: none !important;
+}
+
+page-list .input {
+  margin-bottom: 0 !important;
+}
+
+page-list .type {
+  padding: 0 !important;
+}
+
+page-list #custom-btn {
+  background-color: white !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+page-list #custom-btn img {
+  height: 80%;
+}
+
+page-list .footer {
+  padding: 0 0px 5px 3px !important;
+}
+
+page-list .box1 .row {
+  height: 60px !important;
+  overflow: hidden;
+}
+
+page-list .item-ios {
+  background: transparent !important;
+}
+
+page-list .btn {
+  font-size: 16px;
+}
+
+page-list .custom-input {
+  background-color: rgba(196, 196, 196, 0.4) !important;
+  border: solid 0.55px #c7c7c7;
+  margin-bottom: -10px;
+}
+
+page-profile .back-button {
+  color: white !important;
+}
+
+page-profile .back-button-text {
+  display: none;
+}
+
+page-profile .savebtn {
+  background-color: #FFBF48 !important;
 }
