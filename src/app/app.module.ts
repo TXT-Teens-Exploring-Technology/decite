@@ -13,17 +13,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DatabaseProvider } from '../providers/database/database';
 import { ProfilePage } from '../pages/profile/profile';
-
+import { PeriodNewPage } from '../pages/period-new/period-new';
 
 @NgModule({
   declarations: [
     MyApp,
     PeriodPage,
-    ProfilePage
-  
+    ProfilePage,
+    PeriodNewPage
   ],
   imports: [
-    BrowserModule,
+
+  BrowserModule,
     IonicModule.forRoot(MyApp, {
       scrollAssist: true,
       autoFocusAssist: true
@@ -36,7 +37,8 @@ import { ProfilePage } from '../pages/profile/profile';
   entryComponents: [
     MyApp,
     PeriodPage,
-    ProfilePage
+    ProfilePage,
+    PeriodNewPage
     
 
   ],

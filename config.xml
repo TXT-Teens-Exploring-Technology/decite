@@ -100,6 +100,8 @@
     <allow-navigation href="http://169.254.2.88:8100" />
     <allow-navigation href="http://169.254.24.27:8100" />
     <allow-navigation href="http://169.254.178.58:8100" />
+    <allow-navigation href="http://10.27.22.170:8100" />
+    <allow-navigation href="http://169.254.235.198:8100" />
     <engine name="ios" spec="4.5.5" />
     <plugin name="cordova-plugin-device" spec="^2.0.2" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
