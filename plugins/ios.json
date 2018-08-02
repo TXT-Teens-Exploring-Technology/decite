@@ -1,27 +1,27 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "Educo.txt"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "Educo.txt"
     },
-    "installed_plugins": {
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "decite.io"
-        },
-        "cordova-plugin-ionic-keyboard": {
-            "PACKAGE_NAME": "decite.io"
-        },
-        "cordova-plugin-ionic-webview": {
-            "PACKAGE_NAME": "decite.io"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "decite.io"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "decite.io"
-        }
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "Educo.txt"
     },
-    "dependent_plugins": {}
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "Educo.txt"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "Educo.txt"
+    }
+  },
+  "dependent_plugins": {}
 }
